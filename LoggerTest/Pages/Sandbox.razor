@@ -1,0 +1,40 @@
+﻿@page "/"
+
+<h1 style="text-align: center; color: darkgreen;">Sandbox</h1>
+<hr />
+
+<div style="margin-top: 100px;">
+    <div class="row">
+        <div class="col-2" style="text-align: right;">
+            <p>Error message:</p>
+        </div>
+
+        <div class="col-6">
+            <RadzenTextBox @bind-Value="_errorMessage"
+                           Style="width: 100%;" />
+        </div>
+        <div class="col-3" style="text-align: left;">
+            <RadzenButton ButtonStyle="ButtonStyle.Danger"
+                          Text="Go"
+                          Size="ButtonSize.Small"
+                          Click="LetError" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2" style="text-align: right;">
+            <p>Info message:</p>
+        </div>
+
+        <div class="col-6">
+            <RadzenTextBox @bind-Value="_informationMessage"
+                           Style="width: 100%;" />
+        </div>
+
+        <div class="col-3" style="text-align: left;">
+            <RadzenButton ButtonStyle="ButtonStyle.Warning"
+                          Text="Go"
+                          Size="ButtonSize.Small"
+                          Click="LetInformation" />
+        </div>
+    </div>
+</div>
